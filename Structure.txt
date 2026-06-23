@@ -1,0 +1,43 @@
+🧠 Why This Is Important
+
+Without Circuit Breaker:
+Service A
+    ↓
+Service B (Down)
+    ↓
+Timeout
+    ↓
+Application Slow
+
+With Circuit Breaker:
+Service A
+    ↓
+Circuit Breaker
+    ↓
+❌ Service B Down
+
+Immediate Response
+
+Benefits:
+✅ Prevents cascading failures
+✅ Faster error handling
+✅ Better system stability
+✅ Improved user experience
+
+Used By
+Netflix Hystrix
+Resilience4j
+Spring Cloud
+AWS Architecture Patterns
+
+🛠 Tech Stack
+Python
+Flask
+time
+random
+
+📂 Project Structure
+circuit-breaker-service/
+│
+├── app.py
+└── README.md
